@@ -1,0 +1,312 @@
+{
+  "Hyundai": {
+    "Creta": {
+      "Front Bumper": { "repair": 6000, "replace": 14000, "labor": 3000 },
+      "Rear Bumper": { "repair": 5500, "replace": 13500, "labor": 2800 },
+      "Left Door": { "repair": 7000, "replace": 22000, "labor": 4000 },
+      "Right Door": { "repair": 7000, "replace": 22000, "labor": 4000 },
+      "Headlight": { "repair": 2000, "replace": 16000, "labor": 1500 },
+      "Tail Light": { "repair": 1800, "replace": 11000, "labor": 1200 },
+      "Windshield": { "repair": 3000, "replace": 12000, "labor": 2500 },
+      "Hood": { "repair": 8000, "replace": 25000, "labor": 4500 },
+      "Fender": { "repair": 5000, "replace": 15000, "labor": 3000 },
+      "Side Mirror": { "repair": 1500, "replace": 8500, "labor": 1000 },
+      "Roof Panel": { "repair": 10000, "replace": 35000, "labor": 6000 },
+      "Trunk Lid": { "repair": 7500, "replace": 20000, "labor": 3800 }
+    },
+    "i20": {
+      "Front Bumper": { "repair": 4500, "replace": 10500, "labor": 2500 },
+      "Rear Bumper": { "repair": 4200, "replace": 9800, "labor": 2200 },
+      "Left Door": { "repair": 5500, "replace": 16500, "labor": 3000 },
+      "Right Door": { "repair": 5500, "replace": 16500, "labor": 3000 },
+      "Headlight": { "repair": 1500, "replace": 11000, "labor": 1200 },
+      "Tail Light": { "repair": 1200, "replace": 8000, "labor": 1000 },
+      "Windshield": { "repair": 2500, "replace": 9000, "labor": 2000 },
+      "Hood": { "repair": 6000, "replace": 18000, "labor": 3500 },
+      "Fender": { "repair": 4000, "replace": 11000, "labor": 2200 },
+      "Side Mirror": { "repair": 1200, "replace": 6000, "labor": 800 },
+      "Roof Panel": { "repair": 8000, "replace": 26000, "labor": 4500 },
+      "Trunk Lid": { "repair": 5500, "replace": 15000, "labor": 3000 }
+    },
+    "Verna": {
+      "Front Bumper": { "repair": 5500, "replace": 13000, "labor": 2800 },
+      "Rear Bumper": { "repair": 5000, "replace": 12500, "labor": 2600 },
+      "Left Door": { "repair": 6500, "replace": 20000, "labor": 3500 },
+      "Right Door": { "repair": 6500, "replace": 20000, "labor": 3500 },
+      "Headlight": { "repair": 2200, "replace": 15000, "labor": 1500 },
+      "Tail Light": { "repair": 1600, "replace": 10000, "labor": 1100 },
+      "Windshield": { "repair": 2800, "replace": 11000, "labor": 2200 },
+      "Hood": { "repair": 7500, "replace": 23000, "labor": 4000 },
+      "Fender": { "repair": 4500, "replace": 13500, "labor": 2600 },
+      "Side Mirror": { "repair": 1400, "replace": 7500, "labor": 900 },
+      "Roof Panel": { "repair": 9500, "replace": 31000, "labor": 5500 },
+      "Trunk Lid": { "repair": 6800, "replace": 18000, "labor": 3400 }
+    },
+    "Venue": {
+      "Front Bumper": { "repair": 5000, "replace": 12000, "labor": 2600 },
+      "Rear Bumper": { "repair": 4800, "replace": 11500, "labor": 2400 },
+      "Left Door": { "repair": 6000, "replace": 18000, "labor": 3200 },
+      "Right Door": { "repair": 6000, "replace": 18000, "labor": 3200 },
+      "Headlight": { "repair": 1800, "replace": 13000, "labor": 1300 },
+      "Tail Light": { "repair": 1400, "replace": 9000, "labor": 1000 },
+      "Windshield": { "repair": 2600, "replace": 10000, "labor": 2100 },
+      "Hood": { "repair": 6800, "replace": 20000, "labor": 3700 },
+      "Fender": { "repair": 4200, "replace": 12000, "labor": 2400 },
+      "Side Mirror": { "repair": 1300, "replace": 6800, "labor": 850 },
+      "Roof Panel": { "repair": 8500, "replace": 28000, "labor": 5000 },
+      "Trunk Lid": { "repair": 6000, "replace": 16500, "labor": 3200 }
+    }
+  },
+  "Toyota": {
+    "Fortuner": {
+      "Front Bumper": { "repair": 9000, "replace": 28000, "labor": 5000 },
+      "Rear Bumper": { "repair": 8500, "replace": 26000, "labor": 4800 },
+      "Left Door": { "repair": 10000, "replace": 38000, "labor": 6000 },
+      "Right Door": { "repair": 10000, "replace": 38000, "labor": 6000 },
+      "Headlight": { "repair": 3000, "replace": 35000, "labor": 2000 },
+      "Tail Light": { "repair": 2500, "replace": 22000, "labor": 1800 },
+      "Windshield": { "repair": 4000, "replace": 22000, "labor": 3500 },
+      "Hood": { "repair": 12000, "replace": 45000, "labor": 7000 },
+      "Fender": { "repair": 7500, "replace": 25000, "labor": 4500 },
+      "Side Mirror": { "repair": 2500, "replace": 15000, "labor": 1500 },
+      "Roof Panel": { "repair": 15000, "replace": 60000, "labor": 9000 },
+      "Trunk Lid": { "repair": 11000, "replace": 36000, "labor": 5800 }
+    },
+    "Innova Crysta": {
+      "Front Bumper": { "repair": 8000, "replace": 22000, "labor": 4500 },
+      "Rear Bumper": { "repair": 7500, "replace": 20000, "labor": 4200 },
+      "Left Door": { "repair": 8800, "replace": 30000, "labor": 5000 },
+      "Right Door": { "repair": 8800, "replace": 30000, "labor": 5000 },
+      "Headlight": { "repair": 2500, "replace": 26000, "labor": 1800 },
+      "Tail Light": { "repair": 2000, "replace": 17000, "labor": 1500 },
+      "Windshield": { "repair": 3500, "replace": 18000, "labor": 3000 },
+      "Hood": { "repair": 10000, "replace": 35000, "labor": 5800 },
+      "Fender": { "repair": 6500, "replace": 20000, "labor": 3800 },
+      "Side Mirror": { "repair": 2000, "replace": 12000, "labor": 1200 },
+      "Roof Panel": { "repair": 13000, "replace": 48000, "labor": 7500 },
+      "Trunk Lid": { "repair": 9000, "replace": 28000, "labor": 4800 }
+    },
+    "Glanza": {
+      "Front Bumper": { "repair": 4000, "replace": 9500, "labor": 2200 },
+      "Rear Bumper": { "repair": 3800, "replace": 9000, "labor": 2000 },
+      "Left Door": { "repair": 5000, "replace": 15000, "labor": 2800 },
+      "Right Door": { "repair": 5000, "replace": 15000, "labor": 2800 },
+      "Headlight": { "repair": 1400, "replace": 10000, "labor": 1100 },
+      "Tail Light": { "repair": 1100, "replace": 7500, "labor": 900 },
+      "Windshield": { "repair": 2200, "replace": 8500, "labor": 1800 },
+      "Hood": { "repair": 5500, "replace": 16000, "labor": 3200 },
+      "Fender": { "repair": 3800, "replace": 10000, "labor": 2000 },
+      "Side Mirror": { "repair": 1100, "replace": 5500, "labor": 750 },
+      "Roof Panel": { "repair": 7500, "replace": 24000, "labor": 4000 },
+      "Trunk Lid": { "repair": 5000, "replace": 13500, "labor": 2700 }
+    }
+  },
+  "Tata": {
+    "Nexon": {
+      "Front Bumper": { "repair": 5000, "replace": 11500, "labor": 2500 },
+      "Rear Bumper": { "repair": 4600, "replace": 10800, "labor": 2300 },
+      "Left Door": { "repair": 6200, "replace": 19000, "labor": 3300 },
+      "Right Door": { "repair": 6200, "replace": 19000, "labor": 3300 },
+      "Headlight": { "repair": 1800, "replace": 9500, "labor": 1200 },
+      "Tail Light": { "repair": 1300, "replace": 8500, "labor": 1000 },
+      "Windshield": { "repair": 2700, "replace": 10500, "labor": 2200 },
+      "Hood": { "repair": 6500, "replace": 18000, "labor": 3500 },
+      "Fender": { "repair": 4300, "replace": 12500, "labor": 2500 },
+      "Side Mirror": { "repair": 1250, "replace": 6200, "labor": 800 },
+      "Roof Panel": { "repair": 8800, "replace": 29000, "labor": 4800 },
+      "Trunk Lid": { "repair": 6200, "replace": 17000, "labor": 3300 }
+    },
+    "Harrier": {
+      "Front Bumper": { "repair": 7500, "replace": 19000, "labor": 4000 },
+      "Rear Bumper": { "repair": 7000, "replace": 17800, "labor": 3800 },
+      "Left Door": { "repair": 8200, "replace": 26000, "labor": 4500 },
+      "Right Door": { "repair": 8200, "replace": 26000, "labor": 4500 },
+      "Headlight": { "repair": 2500, "replace": 24000, "labor": 1800 },
+      "Tail Light": { "repair": 1900, "replace": 15000, "labor": 1400 },
+      "Windshield": { "repair": 3200, "replace": 16000, "labor": 2800 },
+      "Hood": { "repair": 9000, "replace": 29000, "labor": 5000 },
+      "Fender": { "repair": 6000, "replace": 18000, "labor": 3500 },
+      "Side Mirror": { "repair": 1800, "replace": 10500, "labor": 1100 },
+      "Roof Panel": { "repair": 12000, "replace": 42000, "labor": 6800 },
+      "Trunk Lid": { "repair": 8000, "replace": 24000, "labor": 4200 }
+    },
+    "Safari": {
+      "Front Bumper": { "repair": 8000, "replace": 21000, "labor": 4200 },
+      "Rear Bumper": { "repair": 7500, "replace": 19500, "labor": 4000 },
+      "Left Door": { "repair": 8800, "replace": 28000, "labor": 4800 },
+      "Right Door": { "repair": 8800, "replace": 28000, "labor": 4800 },
+      "Headlight": { "repair": 2700, "replace": 26000, "labor": 1900 },
+      "Tail Light": { "repair": 2100, "replace": 16500, "labor": 1500 },
+      "Windshield": { "repair": 3500, "replace": 17500, "labor": 3000 },
+      "Hood": { "repair": 9800, "replace": 32000, "labor": 5500 },
+      "Fender": { "repair": 6400, "replace": 19500, "labor": 3800 },
+      "Side Mirror": { "repair": 2000, "replace": 11500, "labor": 1200 },
+      "Roof Panel": { "repair": 13000, "replace": 46000, "labor": 7200 },
+      "Trunk Lid": { "repair": 8500, "replace": 26000, "labor": 4500 }
+    },
+    "Punch": {
+      "Front Bumper": { "repair": 4000, "replace": 9000, "labor": 2000 },
+      "Rear Bumper": { "repair": 3800, "replace": 8500, "labor": 1900 },
+      "Left Door": { "repair": 4800, "replace": 14000, "labor": 2600 },
+      "Right Door": { "repair": 4800, "replace": 14000, "labor": 2600 },
+      "Headlight": { "repair": 1300, "replace": 8000, "labor": 1000 },
+      "Tail Light": { "repair": 1000, "replace": 6500, "labor": 850 },
+      "Windshield": { "repair": 2200, "replace": 8000, "labor": 1800 },
+      "Hood": { "repair": 5200, "replace": 15000, "labor": 3000 },
+      "Fender": { "repair": 3600, "replace": 9800, "labor": 1900 },
+      "Side Mirror": { "repair": 1000, "replace": 4800, "labor": 700 },
+      "Roof Panel": { "repair": 7000, "replace": 22000, "labor": 3800 },
+      "Trunk Lid": { "repair": 4800, "replace": 12500, "labor": 2500 }
+    }
+  },
+  "Kia": {
+    "Seltos": {
+      "Front Bumper": { "repair": 6000, "replace": 14500, "labor": 3000 },
+      "Rear Bumper": { "repair": 5500, "replace": 13800, "labor": 2800 },
+      "Left Door": { "repair": 7200, "replace": 22500, "labor": 4000 },
+      "Right Door": { "repair": 7200, "replace": 22500, "labor": 4000 },
+      "Headlight": { "repair": 2000, "replace": 17000, "labor": 1500 },
+      "Tail Light": { "repair": 1700, "replace": 12000, "labor": 1200 },
+      "Windshield": { "repair": 3000, "replace": 12500, "labor": 2500 },
+      "Hood": { "repair": 8200, "replace": 26000, "labor": 4600 },
+      "Fender": { "repair": 5200, "replace": 15500, "labor": 3000 },
+      "Side Mirror": { "repair": 1500, "replace": 8800, "labor": 1000 },
+      "Roof Panel": { "repair": 10500, "replace": 36000, "labor": 6200 },
+      "Trunk Lid": { "repair": 7800, "replace": 21000, "labor": 4000 }
+    },
+    "Sonet": {
+      "Front Bumper": { "repair": 5000, "replace": 11800, "labor": 2500 },
+      "Rear Bumper": { "repair": 4700, "replace": 11000, "labor": 2300 },
+      "Left Door": { "repair": 6100, "replace": 18200, "labor": 3200 },
+      "Right Door": { "repair": 6100, "replace": 18200, "labor": 3200 },
+      "Headlight": { "repair": 1750, "replace": 12500, "labor": 1300 },
+      "Tail Light": { "repair": 1350, "replace": 8800, "labor": 1000 },
+      "Windshield": { "repair": 2600, "replace": 9800, "labor": 2100 },
+      "Hood": { "repair": 6700, "replace": 19500, "labor": 3600 },
+      "Fender": { "repair": 4200, "replace": 12200, "labor": 2400 },
+      "Side Mirror": { "repair": 1250, "replace": 6600, "labor": 850 },
+      "Roof Panel": { "repair": 8400, "replace": 27500, "labor": 4900 },
+      "Trunk Lid": { "repair": 5900, "replace": 16000, "labor": 3100 }
+    }
+  },
+  "Honda": {
+    "City": {
+      "Front Bumper": { "repair": 5800, "replace": 13500, "labor": 2800 },
+      "Rear Bumper": { "repair": 5300, "replace": 12800, "labor": 2600 },
+      "Left Door": { "repair": 6800, "replace": 21000, "labor": 3800 },
+      "Right Door": { "repair": 6800, "replace": 21000, "labor": 3800 },
+      "Headlight": { "repair": 2000, "replace": 16500, "labor": 1500 },
+      "Tail Light": { "repair": 1600, "replace": 11500, "labor": 1100 },
+      "Windshield": { "repair": 2900, "replace": 11800, "labor": 2400 },
+      "Hood": { "repair": 7800, "replace": 24000, "labor": 4200 },
+      "Fender": { "repair": 4800, "replace": 14200, "labor": 2800 },
+      "Side Mirror": { "repair": 1450, "replace": 8000, "labor": 950 },
+      "Roof Panel": { "repair": 9800, "replace": 33000, "labor": 5800 },
+      "Trunk Lid": { "repair": 7200, "replace": 19000, "labor": 3600 }
+    },
+    "Amaze": {
+      "Front Bumper": { "repair": 4200, "replace": 9800, "labor": 2200 },
+      "Rear Bumper": { "repair": 4000, "replace": 9200, "labor": 2000 },
+      "Left Door": { "repair": 5200, "replace": 15500, "labor": 2900 },
+      "Right Door": { "repair": 5200, "replace": 15500, "labor": 2900 },
+      "Headlight": { "repair": 1500, "replace": 10500, "labor": 1100 },
+      "Tail Light": { "repair": 1200, "replace": 7800, "labor": 900 },
+      "Windshield": { "repair": 2300, "replace": 8800, "labor": 1900 },
+      "Hood": { "repair": 5800, "replace": 17000, "labor": 3200 },
+      "Fender": { "repair": 3900, "replace": 10800, "labor": 2100 },
+      "Side Mirror": { "repair": 1150, "replace": 5800, "labor": 750 },
+      "Roof Panel": { "repair": 7800, "replace": 25000, "labor": 4200 },
+      "Trunk Lid": { "repair": 5200, "replace": 14000, "labor": 2800 }
+    },
+    "Elevate": {
+      "Front Bumper": { "repair": 5500, "replace": 13000, "labor": 2700 },
+      "Rear Bumper": { "repair": 5100, "replace": 12200, "labor": 2500 },
+      "Left Door": { "repair": 6500, "replace": 20000, "labor": 3600 },
+      "Right Door": { "repair": 6500, "replace": 20000, "labor": 3600 },
+      "Headlight": { "repair": 1900, "replace": 15500, "labor": 1400 },
+      "Tail Light": { "repair": 1500, "replace": 10800, "labor": 1100 },
+      "Windshield": { "repair": 2800, "replace": 11200, "labor": 2300 },
+      "Hood": { "repair": 7400, "replace": 22500, "labor": 4000 },
+      "Fender": { "repair": 4600, "replace": 13500, "labor": 2600 },
+      "Side Mirror": { "repair": 1350, "replace": 7500, "labor": 900 },
+      "Roof Panel": { "repair": 9200, "replace": 31000, "labor": 5400 },
+      "Trunk Lid": { "repair": 6800, "replace": 18000, "labor": 3400 }
+    }
+  },
+  "BMW": {
+    "3 Series": {
+      "Front Bumper": { "repair": 14000, "replace": 45000, "labor": 8000 },
+      "Rear Bumper": { "repair": 13000, "replace": 42000, "labor": 7500 },
+      "Left Door": { "repair": 16000, "replace": 60000, "labor": 9500 },
+      "Right Door": { "repair": 16000, "replace": 60000, "labor": 9500 },
+      "Headlight": { "repair": 5000, "replace": 65000, "labor": 3500 },
+      "Tail Light": { "repair": 4000, "replace": 38000, "labor": 2800 },
+      "Windshield": { "repair": 6000, "replace": 35000, "labor": 5000 },
+      "Hood": { "repair": 18000, "replace": 75000, "labor": 11000 },
+      "Fender": { "repair": 12000, "replace": 40000, "labor": 7000 },
+      "Side Mirror": { "repair": 4500, "replace": 28000, "labor": 2500 },
+      "Roof Panel": { "repair": 25000, "replace": 110000, "labor": 15000 },
+      "Trunk Lid": { "repair": 17000, "replace": 55000, "labor": 9000 }
+    },
+    "X3": {
+      "Front Bumper": { "repair": 16000, "replace": 52000, "labor": 9000 },
+      "Rear Bumper": { "repair": 15000, "replace": 48000, "labor": 8500 },
+      "Left Door": { "repair": 18000, "replace": 70000, "labor": 10500 },
+      "Right Door": { "repair": 18000, "replace": 70000, "labor": 10500 },
+      "Headlight": { "repair": 5800, "replace": 75000, "labor": 4000 },
+      "Tail Light": { "repair": 4500, "replace": 42000, "labor": 3200 },
+      "Windshield": { "repair": 7000, "replace": 42000, "labor": 6000 },
+      "Hood": { "repair": 20000, "replace": 88000, "labor": 13000 },
+      "Fender": { "repair": 14000, "replace": 48000, "labor": 8000 },
+      "Side Mirror": { "repair": 5000, "replace": 32000, "labor": 2800 },
+      "Roof Panel": { "repair": 28000, "replace": 130000, "labor": 18000 },
+      "Trunk Lid": { "repair": 19000, "replace": 65000, "labor": 10500 }
+    }
+  },
+  "Mercedes": {
+    "C-Class": {
+      "Front Bumper": { "repair": 15000, "replace": 48000, "labor": 8500 },
+      "Rear Bumper": { "repair": 14000, "replace": 44000, "labor": 8000 },
+      "Left Door": { "repair": 17000, "replace": 64000, "labor": 10000 },
+      "Right Door": { "repair": 17000, "replace": 64000, "labor": 10000 },
+      "Headlight": { "repair": 5200, "replace": 70000, "labor": 3800 },
+      "Tail Light": { "repair": 4200, "replace": 40000, "labor": 3000 },
+      "Windshield": { "repair": 6500, "replace": 38000, "labor": 5500 },
+      "Hood": { "repair": 19000, "replace": 80000, "labor": 12000 },
+      "Fender": { "repair": 13000, "replace": 44000, "labor": 7500 },
+      "Side Mirror": { "repair": 4800, "replace": 30000, "labor": 2600 },
+      "Roof Panel": { "repair": 26000, "replace": 120000, "labor": 16000 },
+      "Trunk Lid": { "repair": 18000, "replace": 58000, "labor": 9800 }
+    },
+    "GLC": {
+      "Front Bumper": { "repair": 17000, "replace": 55000, "labor": 9500 },
+      "Rear Bumper": { "repair": 16000, "replace": 50000, "labor": 9000 },
+      "Left Door": { "repair": 19000, "replace": 75000, "labor": 11000 },
+      "Right Door": { "repair": 19000, "replace": 75000, "labor": 11000 },
+      "Headlight": { "repair": 6000, "replace": 80000, "labor": 4200 },
+      "Tail Light": { "repair": 4800, "replace": 45000, "labor": 3400 },
+      "Windshield": { "repair": 7500, "replace": 45000, "labor": 6500 },
+      "Hood": { "repair": 22000, "replace": 92000, "labor": 14000 },
+      "Fender": { "repair": 15000, "replace": 50000, "labor": 9100 },
+      "Side Mirror": { "repair": 5200, "replace": 34000, "labor": 3000 },
+      "Roof Panel": { "repair": 30000, "replace": 140000, "labor": 19000 },
+      "Trunk Lid": { "repair": 20000, "replace": 70000, "labor": 11500 }
+    }
+  },
+  "Default": {
+    "Standard": {
+      "Front Bumper": { "repair": 5500, "replace": 13000, "labor": 3000 },
+      "Rear Bumper": { "repair": 5000, "replace": 12000, "labor": 2800 },
+      "Left Door": { "repair": 6500, "replace": 19000, "labor": 3500 },
+      "Right Door": { "repair": 6500, "replace": 19000, "labor": 3500 },
+      "Headlight": { "repair": 2000, "replace": 14000, "labor": 1500 },
+      "Tail Light": { "repair": 1500, "replace": 10000, "labor": 1100 },
+      "Windshield": { "repair": 2500, "replace": 10000, "labor": 2000 },
+      "Hood": { "repair": 7000, "replace": 21000, "labor": 4000 },
+      "Fender": { "repair": 4500, "replace": 13000, "labor": 2600 },
+      "Side Mirror": { "repair": 1300, "replace": 7000, "labor": 850 },
+      "Roof Panel": { "repair": 9000, "replace": 30000, "labor": 5000 },
+      "Trunk Lid": { "repair": 6500, "replace": 18000, "labor": 3500 }
+    }
+  }
+}

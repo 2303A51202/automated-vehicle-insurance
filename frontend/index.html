@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Intelligent Vehicle Insurance Claim Assessment System</title>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Top Header Navigation -->
+        <header class="app-header">
+            <div class="logo-group">
+                <div class="logo-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                    <h1>AutoShield AI</h1>
+                    <p class="subtitle">Explainable Insurance Claim Assessment Pipeline</p>
+                </div>
+            </div>
+            <div class="header-status">
+                <span class="status-indicator"><i class="fa-solid fa-circle"></i> System Online</span>
+                <span class="gpu-badge"><i class="fa-solid fa-microchip"></i> RTX 4060 GPU Accelerated</span>
+            </div>
+        </header>
+
+        <!-- Main Dashboard Content -->
+        <main class="dashboard-grid">
+            <!-- Left Column: Claim Input Panel -->
+            <section class="card input-card">
+                <div class="card-header">
+                    <h2><i class="fa-solid fa-file-invoice"></i> Submit Insurance Claim</h2>
+                    <span class="badge">Step 1 of 2</span>
+                </div>
+                
+                <form id="claim-form" class="claim-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="claimed_brand"><i class="fa-solid fa-car-side"></i> Vehicle Make</label>
+                            <select id="claimed_brand" name="claimed_brand" class="form-select">
+                                <option value="Hyundai" selected>Hyundai</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Tata">Tata</option>
+                                <option value="Kia">Kia</option>
+                                <option value="Honda">Honda</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Mercedes">Mercedes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="claimed_model"><i class="fa-solid fa-car"></i> Vehicle Model</label>
+                            <select id="claimed_model" name="claimed_model" class="form-select">
+                                <option value="Creta" selected>Creta</option>
+                                <option value="i20">i20</option>
+                                <option value="Fortuner">Fortuner</option>
+                                <option value="Nexon">Nexon</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="claim_description"><i class="fa-solid fa-pen-nib"></i> Claim Description (NLP Analyzed)</label>
+                        <textarea id="claim_description" name="claim_description" rows="3" class="form-textarea" placeholder="Describe the accident details, damaged parts, and direction of impact...">My vehicle was rear-ended while parked on the side of the street, causing damage to the rear bumper and left door.</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-images"></i> Upload Vehicle Photos (At least 3 required)</label>
+                        <div class="upload-dropzone" id="dropzone">
+                            <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+                            <p class="dropzone-text">Upload <strong>3 or more</strong> angle photos: <span>browse files</span></p>
+                            <p class="dropzone-hint"><i class="fa-solid fa-circle-info"></i> Requires: <strong>Photo 1</strong> (Front View for Logo), <strong>Photo 2</strong> (Rear View for Badge OCR), and <strong>Photo 3+</strong> (Damage View)</p>
+                            <input type="file" id="image-input" multiple accept="image/*" class="file-input">
+                        </div>
+                        <div id="file-list" class="file-preview-list"></div>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="btn-primary">
+                        <i class="fa-solid fa-bolt"></i> Run AI Assessment Pipeline
+                    </button>
+                </form>
+            </section>
+
+            <!-- Right Column: Live Pipeline & Assessment Results -->
+            <section class="results-column">
+                <!-- Initial State Placeholder -->
+                <div id="empty-state" class="card empty-card">
+                    <i class="fa-solid fa-wand-magic-sparkles empty-icon"></i>
+                    <h3>Ready for Assessment</h3>
+                    <p>Upload vehicle damage photos and click "Run AI Assessment Pipeline" to execute multi-model verification, damage fusion, cost estimation, and fraud detection.</p>
+                </div>
+
+                <!-- Loading / Pipeline Progression Card -->
+                <div id="loading-state" class="card loading-card hidden">
+                    <div class="spinner-container">
+                        <div class="pulse-ring"></div>
+                        <i class="fa-solid fa-brain brain-spinner"></i>
+                    </div>
+                    <h3>Executing Multi-Model AI Pipeline</h3>
+                    <p id="pipeline-status">Analyzing image quality and vehicle features...</p>
+                    <div class="progress-bar-bg"><div id="progress-bar-fill" class="progress-bar-fill"></div></div>
+                </div>
+
+                <!-- Assessment Output Results -->
+                <div id="results-panel" class="results-panel hidden">
+                    <!-- Top Summary Stats Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-label">Claim Reference</span>
+                            <span id="res-claim-id" class="stat-value">CLM-9021</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Vehicle Verified</span>
+                            <span id="res-veh-ver" class="stat-value badge-success">MATCHED (94%)</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Estimated Repair Cost</span>
+                            <span id="res-grand-total" class="stat-value highlight-price">₹25,000</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Fraud Risk Score</span>
+                            <span id="res-fraud-score" class="stat-value badge-low-risk">15 / 100 (LOW)</span>
+                        </div>
+                    </div>
+
+                    <!-- Pipeline Stage Tabs -->
+                    <div class="tabs-header">
+                        <button class="tab-btn active" onclick="switchTab('tab-verification')"><i class="fa-solid fa-car-rear"></i> Verification & Quality</button>
+                        <button class="tab-btn" onclick="switchTab('tab-damage')"><i class="fa-solid fa-screwdriver-wrench"></i> Damage & Fusion</button>
+                        <button class="tab-btn" onclick="switchTab('tab-cost')"><i class="fa-solid fa-receipt"></i> Cost Estimate</button>
+                        <button class="tab-btn" onclick="switchTab('tab-fraud')"><i class="fa-solid fa-user-shield"></i> Fraud Audit</button>
+                    </div>
+
+                    <!-- Tab 1: Vehicle Verification & Quality -->
+                    <div id="tab-verification" class="tab-content active">
+                        <div class="card sub-card">
+                            <h3><i class="fa-solid fa-shield-cat"></i> Multi-Stage Vehicle Verification</h3>
+                            <div id="veh-details-grid" class="info-grid"></div>
+                        </div>
+                        <div class="card sub-card">
+                            <h3><i class="fa-solid fa-eye"></i> Image Quality Assessment (OpenCV)</h3>
+                            <div id="quality-list" class="list-stack"></div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Damage Detection, Fusion & Severity -->
+                    <div id="tab-damage" class="tab-content hidden">
+                        <div class="card sub-card">
+                            <h3><i class="fa-solid fa-object-group"></i> Multi-Image Damage Fusion Inventory</h3>
+                            <div class="table-responsive">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Part</th>
+                                            <th>Damage Type</th>
+                                            <th>SegFormer Area</th>
+                                            <th>Severity</th>
+                                            <th>Recommendation</th>
+                                            <th>Confidence</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="damage-table-body"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 3: Part-Wise Cost Estimation -->
+                    <div id="tab-cost" class="tab-content hidden">
+                        <div class="card sub-card">
+                            <h3><i class="fa-solid fa-calculator"></i> Itemized Part & Labor Repair Costs</h3>
+                            <div class="table-responsive">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Damaged Part</th>
+                                            <th>Action</th>
+                                            <th>Part Price</th>
+                                            <th>Labor Price</th>
+                                            <th>Line Subtotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cost-table-body"></tbody>
+                                    <tfoot>
+                                        <tr class="table-total-row">
+                                            <td colspan="4">GRAND TOTAL ESTIMATE</td>
+                                            <td id="cost-grand-total-cell">₹0</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 4: Explainable Fraud Engine -->
+                    <div id="tab-fraud" class="tab-content hidden">
+                        <div class="card sub-card">
+                            <h3><i class="fa-solid fa-clipboard-check"></i> Explainable Multi-Factor Fraud Assessment</h3>
+                            <div class="fraud-banner" id="fraud-banner">
+                                <div class="fraud-score-circle" id="fraud-circle">15</div>
+                                <div>
+                                    <h4 id="fraud-tier-title">Low Risk Claim</h4>
+                                    <p id="fraud-recommendation">Approved for automated claim processing & settlement.</p>
+                                </div>
+                            </div>
+                            <h4 class="section-title"><i class="fa-solid fa-list-check"></i> Multi-Module Evidence & Reasoning Audit</h4>
+                            <div id="fraud-reasons-list" class="reasons-list"></div>
+                        </div>
+                    </div>
+
+                    <!-- Download PDF Action Bar -->
+                    <div class="action-bar">
+                        <a id="download-pdf-btn" href="#" target="_blank" class="btn-download">
+                            <i class="fa-solid fa-file-pdf"></i> Download Official Assessment PDF Report
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
